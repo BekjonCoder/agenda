@@ -87,3 +87,91 @@ h1 {
   from { transform: scale(1); }
   to { transform: scale(1.2); }
 }
+
+
+/* ✅ Mobil uchun (max 600px) */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .days button {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .schedule h2 {
+    font-size: 1.2rem;
+  }
+
+  .schedule ul li {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .trophy {
+    font-size: 1.2rem;
+  }
+}
+
+/* ✅ Tablet uchun (min 601px va max 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .app {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .days button {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .schedule h2 {
+    font-size: 1.5rem;
+  }
+
+  .schedule ul li {
+    font-size: 1.05rem;
+    padding: 10px;
+  }
+
+  .trophy {
+    font-size: 1.5rem;
+  }
+}
+
+/* ✅ Desktop uchun (993px dan yuqori) */
+@media (min-width: 993px) {
+  .app {
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .days button {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+  }
+
+  .schedule h2 {
+    font-size: 1.8rem;
+  }
+
+  .schedule ul li {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  .trophy {
+    font-size: 1.8rem;
+  }
+}
