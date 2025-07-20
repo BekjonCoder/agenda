@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4fd, #d9e4f5);
+  color: #333;
+}
+
+.app {
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.schedule li.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.days button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.days button:hover {
+  background: #4b45c7;
+}
+
+.days button.active {
+  background: #ff914d;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.schedule li {
+  background: #f5f7fb;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.schedule li.completed {
+  text-decoration: line-through;
+  background: #d4edda;
+  color: #155724;
+}
+
+.schedule span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.trophy {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  animation: trophyAnim 1s ease infinite alternate;
+}
+
+@keyframes trophyAnim {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
